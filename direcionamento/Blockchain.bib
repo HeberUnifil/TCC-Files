@@ -1,0 +1,645 @@
+@article{10.1145/2994581,
+author = {Underwood, Sarah},
+title = {Blockchain beyond Bitcoin},
+year = {2016},
+issue_date = {November 2016},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {59},
+number = {11},
+issn = {0001-0782},
+url = {https://doi.org/10.1145/2994581},
+doi = {10.1145/2994581},
+abstract = {Blockchain technology has the potential to revolutionize applications and redefine the digital economy.},
+journal = {Commun. ACM},
+month = oct,
+pages = {15–17},
+numpages = {3}
+}
+
+
+@inproceedings{10.1145/2976749.2978341,
+author = {Gervais, Arthur and Karame, Ghassan O. and W\"{u}st, Karl and Glykantzis, Vasileios and Ritzdorf, Hubert and Capkun, Srdjan},
+title = {On the Security and Performance of Proof of Work Blockchains},
+year = {2016},
+isbn = {9781450341394},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2976749.2978341},
+doi = {10.1145/2976749.2978341},
+abstract = {Proof of Work (PoW) powered blockchains currently account for more than 90% of the total market capitalization of existing digital cryptocurrencies. Although the security provisions of Bitcoin have been thoroughly analysed, the security guarantees of variant (forked) PoW blockchains (which were instantiated with different parameters) have not received much attention in the literature. This opens the question whether existing security analysis of Bitcoin's PoW applies to other implementations which have been instantiated with different consensus and/or network parameters.In this paper, we introduce a novel quantitative framework to analyse the security and performance implications of various consensus and network parameters of PoW blockchains. Based on our framework, we devise optimal adversarial strategies for double-spending and selfish mining while taking into account real world constraints such as network propagation, different block sizes, block generation intervals, information propagation mechanism, and the impact of eclipse attacks. Our framework therefore allows us to capture existing PoW-based deployments as well as PoW blockchain variants that are instantiated with different parameters, and to objectively compare the tradeoffs between their performance and security provisions.},
+booktitle = {Proceedings of the 2016 ACM SIGSAC Conference on Computer and Communications Security},
+pages = {3–16},
+numpages = {14},
+keywords = {security, performance, blockchain, bitcoin},
+location = {Vienna, Austria},
+series = {CCS '16}
+}
+
+
+@inproceedings{10.1145/2976749.2978389,
+author = {Luu, Loi and Narayanan, Viswesh and Zheng, Chaodong and Baweja, Kunal and Gilbert, Seth and Saxena, Prateek},
+title = {A Secure Sharding Protocol For Open Blockchains},
+year = {2016},
+isbn = {9781450341394},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2976749.2978389},
+doi = {10.1145/2976749.2978389},
+abstract = {Cryptocurrencies, such as Bitcoin and 250 similar alt-coins, embody at their core a blockchain protocol --- a mechanism for a distributed network of computational nodes to periodically agree on a set of new transactions. Designing a secure blockchain protocol relies on an open challenge in security, that of designing a highly-scalable agreement protocol open to manipulation by byzantine or arbitrarily malicious nodes. Bitcoin's blockchain agreement protocol exhibits security, but does not scale: it processes 3--7 transactions per second at present, irrespective of the available computation capacity at hand.In this paper, we propose a new distributed agreement protocol for permission-less blockchains called ELASTICO. ELASTICO scales transaction rates almost linearly with available computation for mining: the more the computation power in the network, the higher the number of transaction blocks selected per unit time. ELASTICO is efficient in its network messages and tolerates byzantine adversaries of up to one-fourth of the total computational power. Technically, ELASTICO uniformly partitions or parallelizes the mining network (securely) into smaller committees, each of which processes a disjoint set of transactions (or "shards"). While sharding is common in non-byzantine settings, ELASTICO is the first candidate for a secure sharding protocol with presence of byzantine adversaries. Our scalability experiments on Amazon EC2 with up to $1, 600$ nodes confirm ELASTICO's theoretical scaling properties.},
+booktitle = {Proceedings of the 2016 ACM SIGSAC Conference on Computer and Communications Security},
+pages = {17–30},
+numpages = {14},
+keywords = {sharding, bitcoin, consensus protocol},
+location = {Vienna, Austria},
+series = {CCS '16}
+}
+
+
+@article{10.1145/3212998,
+author = {Eyal, Ittay and Sirer, Emin G\"{u}n},
+title = {Majority is Not Enough: Bitcoin Mining is Vulnerable},
+year = {2018},
+issue_date = {July 2018},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {61},
+number = {7},
+issn = {0001-0782},
+url = {https://doi.org/10.1145/3212998},
+doi = {10.1145/3212998},
+abstract = {The Bitcoin cryptocurrency records its transactions in a public log called the blockchain. Its security rests critically on the distributed protocol that maintains the blockchain, run by participants called miners. Conventional wisdom asserts that the mining protocol is incentive-compatible and secure against colluding minority groups, that is, it incentivizes miners to follow the protocol as prescribed.We show that the Bitcoin mining protocol is not incentive-compatible. We present an attack with which colluding miners' revenue is larger than their fair share. The attack can have significant consequences for Bitcoin: Rational miners will prefer to join the attackers, and the colluding group will increase in size until it becomes a majority. At this point, the Bitcoin system ceases to be a decentralized currency.Unless certain assumptions are made, selfish mining may be feasible for any coalition size of colluding miners. We propose a practical modification to the Bitcoin protocol that protects Bitcoin in the general case. It prohibits selfish mining by a coalition that command less than 1/4 of the resources. This threshold is lower than the wrongly assumed 1/2 bound, but better than the current reality where a coalition of any size can compromise the system.},
+journal = {Commun. ACM},
+month = jun,
+pages = {95–102},
+numpages = {8}
+}
+
+
+@inproceedings{10.1145/3035918.3064033,
+author = {Dinh, Tien Tuan Anh and Wang, Ji and Chen, Gang and Liu, Rui and Ooi, Beng Chin and Tan, Kian-Lee},
+title = {BLOCKBENCH: A Framework for Analyzing Private Blockchains},
+year = {2017},
+isbn = {9781450341974},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3035918.3064033},
+doi = {10.1145/3035918.3064033},
+abstract = {Blockchain technologies are taking the world by storm. Public blockchains, such as Bitcoin and Ethereum, enable secure peer-to-peer applications like crypto-currency or smart contracts. Their security and performance are well studied. This paper concerns recent private blockchain systems designed with stronger security (trust) assumption and performance requirement. These systems target and aim to disrupt applications which have so far been implemented on top of database systems, for example banking, finance and trading applications. Multiple platforms for private blockchains are being actively developed and fine tuned. However, there is a clear lack of a systematic framework with which different systems can be analyzed and compared against each other. Such a framework can be used to assess blockchains' viability as another distributed data processing platform, while helping developers to identify bottlenecks and accordingly improve their platforms.In this paper, we first describe BLOCKBENCH, the first evaluation framework for analyzing private blockchains. It serves as a fair means of comparison for different platforms and enables deeper understanding of different system design choices. Any private blockchain can be integrated to BLOCKBENCH via simple APIs and benchmarked against workloads that are based on real and synthetic smart contracts. BLOCKBENCH measures overall and component-wise performance in terms of throughput, latency, scalability and fault-tolerance. Next, we use BLOCKBENCH to conduct comprehensive evaluation of three major private blockchains: Ethereum, Parity and Hyperledger Fabric. The results demonstrate that these systems are still far from displacing current database systems in traditional data processing workloads. Furthermore, there are gaps in performance among the three systems which are attributed to the design choices at different layers of the blockchain's software stack. We have released BLOCKBENCH for public use.},
+booktitle = {Proceedings of the 2017 ACM International Conference on Management of Data},
+pages = {1085–1100},
+numpages = {16},
+keywords = {consensus, security, performance benchmark, smart contracts, transactions, blockchains},
+location = {Chicago, Illinois, USA},
+series = {SIGMOD '17}
+}
+
+
+@inproceedings{10.1145/3054977.3055003,
+author = {Dorri, Ali and Kanhere, Salil S. and Jurdak, Raja},
+title = {Towards an Optimized BlockChain for IoT},
+year = {2017},
+isbn = {9781450349666},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3054977.3055003},
+doi = {10.1145/3054977.3055003},
+abstract = {There has been increasing interest in adopting BlockChain (BC), that underpins the crypto-currency Bitcoin, in Internet of Things (IoT) for security and privacy. However, BCs are computationally expensive and involve high bandwidth overhead and delays, which are not suitable for most IoT devices. This paper proposes a lightweight BC-based architecture for IoT that virtually eliminates the overheads of classic BC, while maintaining most of its security and privacy benefits. IoT devices benefit from a private immutable ledger, that acts similar to BC but is managed centrally, to optimize energy consumption. High resource devices create an overlay network to implement a publicly accessible distributed BC that ensures end-to-end security and privacy. The proposed architecture uses distributed trust to reduce the block validation processing time. We explore our approach in a smart home setting as a representative case study for broader IoT applications. Qualitative evaluation of the architecture under common threat models highlights its effectiveness in providing security and privacy for IoT applications. Simulations demonstrate that our method decreases packet and processing overhead significantly compared to the BC implementation used in Bitcoin.},
+booktitle = {Proceedings of the Second International Conference on Internet-of-Things Design and Implementation},
+pages = {173–178},
+numpages = {6},
+keywords = {Security, Privacy, Internet of Things, BlockChain},
+location = {Pittsburgh, PA, USA},
+series = {IoTDI '17}
+}
+
+
+@inproceedings{10.1145/2976749.2978408,
+author = {Carlsten, Miles and Kalodner, Harry and Weinberg, S. Matthew and Narayanan, Arvind},
+title = {On the Instability of Bitcoin Without the Block Reward},
+year = {2016},
+isbn = {9781450341394},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2976749.2978408},
+doi = {10.1145/2976749.2978408},
+abstract = {Bitcoin provides two incentives for miners: block rewards and transaction fees. The former accounts for the vast majority of miner revenues at the beginning of the system, but it is expected to transition to the latter as the block rewards dwindle. There has been an implicit belief that whether miners are paid by block rewards or transaction fees does not affect the security of the block chain.We show that this is not the case. Our key insight is that with only transaction fees, the variance of the block reward is very high due to the exponentially distributed block arrival time, and it becomes attractive to fork a "wealthy" block to "steal" the rewards therein. We show that this results in an equilibrium with undesirable properties for Bitcoin's security and performance, and even non-equilibria in some circumstances. We also revisit selfish mining and show that it can be made profitable for a miner with an arbitrarily low hash power share, and who is arbitrarily poorly connected within the network. Our results are derived from theoretical analysis and confirmed by a new Bitcoin mining simulator that may be of independent interest.We discuss the troubling implications of our results for Bitcoin's future security and draw lessons for the design of new cryptocurrencies.},
+booktitle = {Proceedings of the 2016 ACM SIGSAC Conference on Computer and Communications Security},
+pages = {154–167},
+numpages = {14},
+keywords = {equilibrium, game theory, cryptocurrencies, bitcoin, simulator, selfish mining, learning},
+location = {Vienna, Austria},
+series = {CCS '16}
+}
+
+
+@inproceedings{10.1145/3055518.3055526,
+author = {Vukoli\'{c}, Marko},
+title = {Rethinking Permissioned Blockchains},
+year = {2017},
+isbn = {9781450349741},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3055518.3055526},
+doi = {10.1145/3055518.3055526},
+abstract = {Current blockchain platforms, especially the recent permissioned systems, have architectural limitations: smart contracts run sequentially, all node executes all smart contracts, consensus protocols are hard-coded, the trust model is static and not flexible, and non-determinism in smart-contract execution poses serious problems. Overcoming these limitations is critical for improving both functional properties of blockchains, such as confidentiality and consistency, as well as their non-functional properties, such as performance and scalability. We discuss these limitations in the context of permissioned blockchains, including an early version of the Hyperledger Fabric blockchain platform, and how a re-design of Hyperledger Fabric's architecture addresses them.},
+booktitle = {Proceedings of the ACM Workshop on Blockchain, Cryptocurrencies and Contracts},
+pages = {3–7},
+numpages = {5},
+keywords = {consensus, byzantine fault-tolerance, hyperledger fabric, system architecture, blockchain},
+location = {Abu Dhabi, United Arab Emirates},
+series = {BCC '17}
+}
+
+
+@article{10.1145/2685328.2685334,
+author = {Omohundro, Steve},
+title = {Cryptocurrencies, Smart Contracts, and Artificial Intelligence},
+year = {2014},
+issue_date = {December 2014},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {1},
+number = {2},
+url = {https://doi.org/10.1145/2685328.2685334},
+doi = {10.1145/2685328.2685334},
+abstract = {Recent developments in "cryptocurrencies" and "smart contracts" are creating new opportunities for applying AI techniques. These economic technologies would benefit from greater real world knowledge and reasoning as they become integrated with everyday commerce. Cryptocurrencies and smart contracts may also provide an infrastructure for ensuring that AI systems follow specified legal and safety regulations as they become more integrated into human society.},
+journal = {AI Matters},
+month = dec,
+pages = {19–21},
+numpages = {3}
+}
+
+
+@article{10.1145/3158333,
+author = {Subramanian, Hemang},
+title = {Decentralized Blockchain-Based Electronic Marketplaces},
+year = {2017},
+issue_date = {January 2018},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {61},
+number = {1},
+issn = {0001-0782},
+url = {https://doi.org/10.1145/3158333},
+doi = {10.1145/3158333},
+abstract = {In a decentralized marketplace, buyers and sellers transact directly, without manipulation by intermediary platforms.},
+journal = {Commun. ACM},
+month = dec,
+pages = {78–84},
+numpages = {7}
+}
+
+
+@article{10.1145/3316481,
+author = {Zhang, Rui and Xue, Rui and Liu, Ling},
+title = {Security and Privacy on Blockchain},
+year = {2019},
+issue_date = {July 2019},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {52},
+number = {3},
+issn = {0360-0300},
+url = {https://doi.org/10.1145/3316481},
+doi = {10.1145/3316481},
+abstract = {Blockchain offers an innovative approach to storing information, executing transactions, performing functions, and establishing trust in an open environment. Many consider blockchain as a technology breakthrough for cryptography and cybersecurity, with use cases ranging from globally deployed cryptocurrency systems like Bitcoin, to smart contracts, smart grids over the Internet of Things, and so forth. Although blockchain has received growing interests in both academia and industry in the recent years, the security and privacy of blockchains continue to be at the center of the debate when deploying blockchain in different applications. This article presents a comprehensive overview of the security and privacy of blockchain. To facilitate the discussion, we first introduce the notion of blockchains and its utility in the context of Bitcoin-like online transactions. Then, we describe the basic security properties that are supported as the essential requirements and building blocks for Bitcoin-like cryptocurrency systems, followed by presenting the additional security and privacy properties that are desired in many blockchain applications. Finally, we review the security and privacy techniques for achieving these security properties in blockchain-based systems, including representative consensus algorithms, hash chained storage, mixing protocols, anonymous signatures, non-interactive zero-knowledge proof, and so forth. We conjecture that this survey can help readers to gain an in-depth understanding of the security and privacy of blockchain with respect to concept, attributes, techniques, and systems.},
+journal = {ACM Comput. Surv.},
+month = jul,
+articleno = {51},
+numpages = {34},
+keywords = {privacy, security, Blockchain}
+}
+
+
+@inproceedings{10.1145/3098954.3098958,
+author = {Neisse, Ricardo and Steri, Gary and Nai-Fovino, Igor},
+title = {A Blockchain-Based Approach for Data Accountability and Provenance Tracking},
+year = {2017},
+isbn = {9781450352574},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3098954.3098958},
+doi = {10.1145/3098954.3098958},
+abstract = {The recent approval of the General Data Protection Regulation (GDPR) imposes new data protection requirements on data controllers and processors with respect to the processing of European Union (EU) residents' data. These requirements consist of a single set of rules that have binding legal status and should be enforced in all EU member states. In light of these requirements, we propose in this paper the use of a blockchain-based approach to support data accountability and provenance tracking. Our approach relies on the use of publicly auditable contracts deployed in a blockchain that increase the transparency with respect to the access and usage of data. We identify and discuss three models for our approach with different granularity and scalability requirements where contracts can be used to encode data usage policies and provenance tracking information in a privacy-friendly way. From these three models we designed, implemented, and evaluated a model where contracts are deployed by data subjects for each data controller, and a model where subjects join contracts deployed by data controllers in case they accept the data handling conditions. Our implementations show in practice the feasibility and limitations of contracts for the purposes identified in this paper.},
+booktitle = {Proceedings of the 12th International Conference on Availability, Reliability and Security},
+articleno = {14},
+numpages = {10},
+keywords = {blockchain, data accountability, smart contracts},
+location = {Reggio Calabria, Italy},
+series = {ARES '17}
+}
+
+
+@inproceedings{10.1145/2976749.2976756,
+author = {Karame, Ghassan},
+title = {On the Security and Scalability of Bitcoin's Blockchain},
+year = {2016},
+isbn = {9781450341394},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2976749.2976756},
+doi = {10.1145/2976749.2976756},
+abstract = {The blockchain emerges as an innovative tool which proves to be useful in a number of application scenarios. A number of large industrial players, such as IBM, Microsoft, Intel, and NEC, are currently investing in exploiting the blockchain in order to enrich their portfolio of products. A number of researchers and practitioners speculate that the blockchain technology can change the way we see a number of online applications today. Although it is still early to tell for sure, it is expected that the blockchain will stimulate considerable changes to a large number of products and will positively impact the digital experience of many individuals around the globe. In this tutorial, we overview, detail, and analyze the security provisions of Bitcoin and its underlying blockchain-effectively capturing recently reported attacks and threats in the system. Our contributions go beyond the mere analysis of reported vulnerabilities of Bitcoin; namely, we describe and evaluate a number of countermeasures to deter threats on the system-some of which have already been incorporated in the system. Recall that Bitcoin has been forked multiple times in order to fine-tune the consensus (i.e., the block generation time and the hash function), and the network parameters (e.g., the size of blocks). As such, the results reported in this tutorial are not only restricted to Bitcoin, but equally apply to a number of "altcoins" which are basically clones/forks of the Bitcoin source code. Given the increasing number of alternative blockchain proposals, this tutorial extracts the basic security lessons learnt from the Bitcoin system with the aim to foster better designs and analysis of next-generation secure blockchain currencies and technologies.},
+booktitle = {Proceedings of the 2016 ACM SIGSAC Conference on Computer and Communications Security},
+pages = {1861–1862},
+numpages = {2},
+keywords = {blockchain security, bitcoin security},
+location = {Vienna, Austria},
+series = {CCS '16}
+}
+
+
+@inbook{10.1145/3025453.3025886,
+author = {Sas, Corina and Khairuddin, Irni Eliana},
+title = {Design for Trust: An Exploration of the Challenges and Opportunities of Bitcoin Users},
+year = {2017},
+isbn = {9781450346559},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3025453.3025886},
+abstract = {Bitcoin is a cryptocurrency which has received increasing interest over the last five years. Built upon a decentralized peer to peer system, it supports transparent, fast, cost effective, and irreversible transactions, without the need for trusting third party financial institutions. We know however little about people's motivation and experience with bitcoin currency. This paper reports on interviews with 20 bitcoin users in Malaysia about their experience and trust challenges. Findings show that bitcoins are used more as store of value for speculative investment or savings' protection. The paper advances the HCI theories on trust by identifying main bitcoin characteristics and their impact on trust, such as decentralization, unregulation, embedded expertise, and reputation, as well as transactions' transparency, low cost, and easiness to complete. We discuss insecure transactions, the risk of dishonest traders and its mitigating strategies. The paper concludes with design implications including support for the transparency of two-way transactions, tools for materializing trust, and tools for supporting reversible transactions.},
+booktitle = {Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems},
+pages = {6499–6510},
+numpages = {12}
+}
+
+
+@inproceedings{10.1145/3265689.3265692,
+author = {Lin, Jun and Shen, Zhiqi and Zhang, Anting and Chai, Yueting},
+title = {Blockchain and IoT Based Food Traceability for Smart Agriculture},
+year = {2018},
+isbn = {9781450365871},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3265689.3265692},
+doi = {10.1145/3265689.3265692},
+abstract = {1Food safety is becoming more and more serious topic worldwide. To tackle the food safety issues from the technical aspect, people need a trusted food traceability system that can track and monitor the whole lifespan of food production, including the processes of food raw material cultivation/breeding, processing, transporting, warehousing, and selling etc. In this paper, we propose a trusted, self-organized, open and ecological food traceability system based on blockchain and Internet of Things (IoT) technologies, which involves all parties of a smart agriculture ecosystem, even if they may not trust each other. We use IoT devices to replace manual recording and verification as many as possible, which can reduce the human intervention to the system effectively. Furthermore, we plan to use the smart contract technology to help the law-executor to find problems and process them timely.},
+booktitle = {Proceedings of the 3rd International Conference on Crowd Science and Engineering},
+articleno = {3},
+numpages = {6},
+keywords = {Food Traceability, LPWAN, Blockchain, Internet of Things, Smart Agriculture, Edge Computing},
+location = {Singapore, Singapore},
+series = {ICCSE'18}
+}
+
+
+@inproceedings{10.1145/3243734.3243858,
+author = {Konoth, Radhesh Krishnan and Vineti, Emanuele and Moonsamy, Veelasha and Lindorfer, Martina and Kruegel, Christopher and Bos, Herbert and Vigna, Giovanni},
+title = {MineSweeper: An In-Depth Look into Drive-by Cryptocurrency Mining and Its Defense},
+year = {2018},
+isbn = {9781450356930},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3243734.3243858},
+doi = {10.1145/3243734.3243858},
+abstract = {A wave of alternative coins that can be effectively mined without specialized hardware, and a surge in cryptocurrencies' market value has led to the development of cryptocurrency mining ( cryptomining ) services, such as Coinhive, which can be easily integrated into websites to monetize the computational power of their visitors. While legitimate website operators are exploring these services as an alternative to advertisements, they have also drawn the attention of cybercriminals: drive-by mining (also known as cryptojacking ) is a new web-based attack, in which an infected website secretly executes JavaScript code and/or a WebAssembly module in the user's browser to mine cryptocurrencies without her consent. In this paper, we perform a comprehensive analysis on Alexa's Top 1 Million websites to shed light on the prevalence and profitability of this attack. We study the websites affected by drive-by mining to understand the techniques being used to evade detection, and the latest web technologies being exploited to efficiently mine cryptocurrency. As a result of our study, which covers 28 Coinhive-like services that are widely being used by drive-by mining websites, we identified 20 active cryptomining campaigns. Motivated by our findings, we investigate possible countermeasures against this type of attack. We discuss how current blacklisting approaches and heuristics based on CPU usage are insufficient, and present MineSweeper, a novel detection technique that is based on the intrinsic characteristics of cryptomining code, and, thus, is resilient to obfuscation. Our approach could be integrated into browsers to warn users about silent cryptomining when visiting websites that do not ask for their consent.},
+booktitle = {Proceedings of the 2018 ACM SIGSAC Conference on Computer and Communications Security},
+pages = {1714–1730},
+numpages = {17},
+keywords = {drive-by attacks, mining, cryptojacking, malware, cryptocurrency},
+location = {Toronto, Canada},
+series = {CCS '18}
+}
+
+
+@inproceedings{10.1145/3286978.3287019,
+author = {Michelin, Regio A. and Dorri, Ali and Steger, Marco and Lunardi, Roben C. and Kanhere, Salil S. and Jurdak, Raja and Zorzo, Avelino F.},
+title = {SpeedyChain: A Framework for Decoupling Data from Blockchain for Smart Cities},
+year = {2018},
+isbn = {9781450360937},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3286978.3287019},
+doi = {10.1145/3286978.3287019},
+abstract = {There is increased interest in smart vehicles acting as both data consumers and producers in smart cities. Vehicles can use smart city data for decision-making, such as dynamic routing based on traffic conditions. Moreover, the multitude of embedded sensors in vehicles can collectively produce a rich data set of the urban landscape that can be used to provide a range of services. Key to the success of this vision is a scalable and private architecture for trusted data sharing. This paper proposes a framework called SpeedyChain, that leverages blockchain technology to allow smart vehicles to share their data while maintaining privacy, integrity, resilience, and non-repudiation in a decentralized and tamper-resistant manner. Differently from traditional blockchain usage (e.g., Bitcoin and Ethereum), the proposed framework uses a blockchain design that decouples the data stored in the transactions from the block header, thus allowing fast addition of data to the blocks. Furthermore, an expiration time for each block is proposed to avoid large sized blocks. This paper also presents an evaluation of the proposed framework in a network emulator to demonstrate its benefits.},
+booktitle = {Proceedings of the 15th EAI International Conference on Mobile and Ubiquitous Systems: Computing, Networking and Services},
+pages = {145–154},
+numpages = {10},
+keywords = {Smart Cities, Blockchain, Smart Vehicles},
+location = {New York, NY, USA},
+series = {MobiQuitous '18}
+}
+
+
+@inproceedings{10.1145/3139337.3139340,
+author = {O'Connor, Russell},
+title = {Simplicity: A New Language for Blockchains},
+year = {2017},
+isbn = {9781450350990},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3139337.3139340},
+doi = {10.1145/3139337.3139340},
+abstract = {Simplicity is a typed, combinator-based, functional language without loops and recursion, designed to be used for crypto-currencies and blockchain applications. It aims to improve upon existing crypto-currency languages, such as Bitcoin Script and Ethereum's EVM, while avoiding some of the problems they face. Simplicity comes with formal denotational semantics defined in Coq, a popular, general purpose software proof assistant. Simplicity also includes operational semantics that are defined with an abstract machine that we call the Bit Machine. The Bit Machine is used as a tool for measuring the computational space and time resources needed to evaluate Simplicity programs. Owing to its Turing incompleteness, Simplicity is amenable to static analysis that can be used to derive upper bounds on the computational resources needed, prior to execution. While Turing incomplete, Simplicity can express any finitary function, which we believe is enough to build useful ``smart contracts'' for blockchain applications.},
+booktitle = {Proceedings of the 2017 Workshop on Programming Languages and Analysis for Security},
+pages = {107–120},
+numpages = {14},
+keywords = {smart contracts, formal semantics, crypto-currency, blockchain, bounded computation},
+location = {Dallas, Texas, USA},
+series = {PLAS '17}
+}
+
+
+@inproceedings{10.1145/3211933.3211946,
+author = {Javaid, Uzair and Siang, Ang Kiang and Aman, Muhammad Naveed and Sikdar, Biplab},
+title = {Mitigating LoT Device Based DDoS Attacks Using Blockchain},
+year = {2018},
+isbn = {9781450358385},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3211933.3211946},
+doi = {10.1145/3211933.3211946},
+abstract = {Many IoT devices lack memory and computational complexities of modern computing devices, making them vulnerable to a wide range of cyber attacks. Among these, DDoS attacks are a growing concern in IoT. Such attacks are executed through the introduction of rogue devices and then using them and/or other compromised devices to facilitate DDoS attacks by generating relentless traffic. This paper aims to address DDoS security issues in IoT by proposing an integration of IoT devices with blockchain. This paper uses Ethereum, a blockchain variant, with smart contracts to replace the traditional centralized IoT infrastructure with a decentralized one. IoT devices are then required to access the network using smart contracts. The integration of IoT with Ethereum not only prevents rogue devices from gaining access to the server but also addresses DDoS attacks by using static resource allocation for devices.},
+booktitle = {Proceedings of the 1st Workshop on Cryptocurrencies and Blockchains for Distributed Systems},
+pages = {71–76},
+numpages = {6},
+keywords = {Smart Contract, Distributed Denial of Service (DDoS), Ethereum, Internet of Things (IoT)},
+location = {Munich, Germany},
+series = {CryBlock'18}
+}
+
+
+@inproceedings{10.1145/3180457.3180458,
+author = {Dukkipati, Chethana and Zhang, Yunpeng and Cheng, Liang Chieh},
+title = {Decentralized, BlockChain Based Access Control Framework for the Heterogeneous Internet of Things},
+year = {2018},
+isbn = {9781450356336},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3180457.3180458},
+doi = {10.1145/3180457.3180458},
+abstract = {Privacy and safety are the most needed features while accessing the data in the IoT. Due to the complicated decentralization and heterogeneous environment present in IoT, the security and privacy of the data becomes a challenging job for the developers. The current methods are not suitable for these scenarios where a decentralized and heterogeneous system exists. This paper provides a new method for access control in IoT based on the booming technology "Block Chain," which helps the user in accessing or controlling their data. The contribution consists of a description of the model used to show how a blockchain is used for creating access control methods. To implement the method, the blockchain is taken as the decentralized access manager. The proposed method is validated with respect to the previous related work. Finally, the limitations and future work of the paper are discussed. Access Control Systems are proved to provide access control to critical resources. The right to access the resources is defined by the access control policies that are executed during the access request time.},
+booktitle = {Proceedings of the Third ACM Workshop on Attribute-Based Access Control},
+pages = {61–69},
+numpages = {9},
+keywords = {RBAC, smart contract, blockchain, ABAC, ORBAC},
+location = {Tempe, AZ, USA},
+series = {ABAC'18}
+}
+
+
+@inproceedings{10.1145/2851581.2892500,
+author = {Khairuddin, Irni Eliana and Sas, Corina and Clinch, Sarah and Davies, Nigel},
+title = {Exploring Motivations for Bitcoin Technology Usage},
+year = {2016},
+isbn = {9781450340823},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2851581.2892500},
+doi = {10.1145/2851581.2892500},
+abstract = {This paper presents an exploratory study focusing on user experience with Bitcoin technology. We describe interviews with 9 Bitcoin users and report findings related to users' motivations for buying and using bitcoins. Our initial findings capture three main motivations such as Bitcoin's predicted role in a monetary revolution, users' increased empowerment, and their perception of a real value of Bitcoin currency. We conclude with reflections on the value of these findings for HCI researchers.},
+booktitle = {Proceedings of the 2016 CHI Conference Extended Abstracts on Human Factors in Computing Systems},
+pages = {2872–2878},
+numpages = {7},
+keywords = {bitcoin technology, user motivation},
+location = {San Jose, California, USA},
+series = {CHI EA '16}
+}
+
+
+@inproceedings{10.1145/3022227.3022325,
+author = {Chakravorty, Antorweep and Rong, Chunming},
+title = {Ushare: User Controlled Social Media Based on Blockchain},
+year = {2017},
+isbn = {9781450348881},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3022227.3022325},
+doi = {10.1145/3022227.3022325},
+abstract = {This paper presents the potential for blockchain based solutions to disrupt the world of social networking. We offer Ushare, a user centric blockchain supported social media network that enables users to control, trace and claim ownership of every piece of content they share. Harnessing peer-to-peer capabilities of the blockchain technology allows a truly decentralized, secure, anonymous and traceable content distribution network. Ushare consists of four key components: the blockchain, a hash table with encrypted content shared by a user, a Turing complete relationship system to control the the maximum number of shares performed by user's circle members and a local personal certificate authority that manages the user's circles and encrypts data to be shared before it is broadcasted to the network.},
+booktitle = {Proceedings of the 11th International Conference on Ubiquitous Information Management and Communication},
+articleno = {99},
+numpages = {6},
+keywords = {control, social network, sharing, traceability, ownership, blockchain},
+location = {Beppu, Japan},
+series = {IMCOM '17}
+}
+
+
+@inproceedings{10.1145/3243734.3243814,
+author = {Kiffer, Lucianna and Rajaraman, Rajmohan and shelat, abhi},
+title = {A Better Method to Analyze Blockchain Consistency},
+year = {2018},
+isbn = {9781450356930},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3243734.3243814},
+doi = {10.1145/3243734.3243814},
+abstract = {The celebrated Nakamoto consensus protocol [16] ushered in several new consensus applications including cryptocurrencies. A few recent works [7, 17] have analyzed important properties of blockchains, including most significantly, consistency, which is a guarantee that all honest parties output the same sequence of blocks throughout the execution of the protocol. To establish consistency, the prior analysis of Pass, Seeman and Shelat [17] required a careful counting of certain combinatorial events that was difficult to apply to variations of Nakamoto. The work of Garay, Kiayas, and Leonardas [7] provides another method of analyzing the blockchain under the simplifying assumption that the network was synchronous. The contribution of this paper is the development of a simple Markov-chain based method for analyzing consistency properties of blockchain protocols. The method includes a formal way of stating strong concentration bounds as well as easy ways to concretely compute the bounds. We use our new method to answer a number of basic questions about consistency of blockchains: Our new analysis provides a tighter guarantee on the consistency property of Nakamoto's protocol, including for parameter regimes which [17] could not consider; We analyze a family of delaying attacks first presented in [17], and extend them to other protocols; We analyze how long a participant should wait before considering a high-value transaction "confirmed"; We analyze the consistency of CliqueChain, a variation of the Chainweb [14] system; We provide the first rigorous consistency analysis of GHOST [20] and also analyze a folklore "balancing"-attack. In each case, we use our framework to experimentally analyze the consensus bounds for various network delay parameters and adversarial computing percentages. We hope our techniques enable authors of future blockchain proposals to provide a more rigorous analysis of their schemes.},
+booktitle = {Proceedings of the 2018 ACM SIGSAC Conference on Computer and Communications Security},
+pages = {729–744},
+numpages = {16},
+keywords = {distributed consensus, blockchain, security},
+location = {Toronto, Canada},
+series = {CCS '18}
+}
+
+
+@inproceedings{10.1145/3243734.3243737,
+author = {Tsabary, Itay and Eyal, Ittay},
+title = {The Gap Game},
+year = {2018},
+isbn = {9781450356930},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3243734.3243737},
+doi = {10.1145/3243734.3243737},
+abstract = {Blockchain-based cryptocurrencies secure a decentralized consensus protocol by incentives. The protocol participants, called miners, generate (mine) a series of blocks, each containing monetary transactions created by system users. As incentive for participation, miners receive newly minted currency and transaction fees paid by transaction creators. Blockchain bandwidth limits lead users to pay increasing fees in order to prioritize their transactions. However, most prior work focused on models where fees are negligible. In a notable exception, Carlsten et al. [17] postulated that if incentives come only from fees then a mining gap would form~--- miners would avoid mining when the available fees are insufficient. In this work, we analyze cryptocurrency security in realistic settings, taking into account all elements of expenses and rewards. To study when gaps form, we analyze the system as a game we call the gap game. We analyze the game with a combination of symbolic and numeric analysis tools in a wide range of scenarios. Our analysis confirms Carlsten et al.'s postulate; indeed, we show that gaps form well before fees are the only incentive, and analyze the implications on security. Perhaps surprisingly, we show that different miners choose different gap sizes to optimize their utility, even when their operating costs are identical. Alarmingly, we see that the system incentivizes large miner coalitions, reducing system decentralization. We describe the required conditions to avoid the incentive misalignment, providing guidelines for future cryptocurrency design.},
+booktitle = {Proceedings of the 2018 ACM SIGSAC Conference on Computer and Communications Security},
+pages = {713–728},
+numpages = {16},
+keywords = {blockchains, game theory, cryptocurrency, centralization, mining gap},
+location = {Toronto, Canada},
+series = {CCS '18}
+}
+
+
+@inproceedings{10.1145/3093742.3097982,
+author = {Hull, Richard},
+title = {Blockchain: Distributed Event-Based Processing in a Data-Centric World: Extended Abstract},
+year = {2017},
+isbn = {9781450350655},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3093742.3097982},
+doi = {10.1145/3093742.3097982},
+abstract = {Usage of Blockchain is expanding from the initial focus on crypto-currencies towards applications to support a broad range of collaborative activies amongst businesses, organizations, and individuals. There are two broad levels of Blockchain: the foundation level relates to encryption, consensus algorithms, and support for a single (logical) data store that is shared by all participants; and the "smart contract" level that enables developers and business-level users to specify the data, logic, and behavior that collaborations should follow. The smart contracts are programs that are fundamentally event driven, data-centric, and support the activity of a distributed set of stakeholders situated across multiple organizations. This raises an array of research challenges in areas including language and solution design, interoperation across smart contracts, and verification.},
+booktitle = {Proceedings of the 11th ACM International Conference on Distributed and Event-Based Systems},
+pages = {2–4},
+numpages = {3},
+keywords = {Blockchain, Smart Contract, Business Process Management, Business Collaboration},
+location = {Barcelona, Spain},
+series = {DEBS '17}
+}
+
+
+@inproceedings{10.1145/3211933.3211936,
+author = {Selimi, Mennan and Kabbinale, Aniruddh Rao and Ali, Anwaar and Navarro, Leandro and Sathiaseelan, Arjuna},
+title = {Towards Blockchain-Enabled Wireless Mesh Networks},
+year = {2018},
+isbn = {9781450358385},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3211933.3211936},
+doi = {10.1145/3211933.3211936},
+abstract = {Recently, mesh networking and blockchain are two of the hottest technologies in the telecommunications industry. Combining both can reformulate Internet access. While mesh networking makes connecting to the Internet easy and affordable, blockchain on top of mesh networks makes Internet access profitable by enabling bandwidth-sharing for crypto-tokens. Hyperledger Fabric (HLF) is a blockchain framework implementation and one of the Hyperledger projects hosted by The Linux Foundation. We evaluate HLF in a real production mesh network and in the laboratory. We quantify the performance, bottlenecks and limitations of the current implementation v1.0. We identify the opportunities for improvement to serve the needs of wireless mesh access networks. To the best of our knowledge, this is the first HLF deployment made in a production wireless mesh network.},
+booktitle = {Proceedings of the 1st Workshop on Cryptocurrencies and Blockchains for Distributed Systems},
+pages = {13–18},
+numpages = {6},
+location = {Munich, Germany},
+series = {CryBlock'18}
+}
+
+
+@inproceedings{10.1145/3194113.3194122,
+author = {Ehmke, Christopher and Wessling, Florian and Friedrich, Christoph M.},
+title = {Proof-of-Property: A Lightweight and Scalable Blockchain Protocol},
+year = {2018},
+isbn = {9781450357265},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3194113.3194122},
+doi = {10.1145/3194113.3194122},
+abstract = {The expansion of blockchain technologies from financial applications to other fields intensifies the problem of an increasing size of data stored in the blockchain. Unfortunately, new participants of the blockchain network are required to download the whole blockchain to gain an overview about the state of the system and to validate incoming transactions. Approaches like IOTA, SegWit or the Lightning Network try to solve the scalability issues of blockchain applications. Unfortunately, they focus on strategies slowing down the blockchain's growth instead of reducing the problems arising from a growing chain or introduce new concepts to oust the linear blockchain altogether. The approach proposed in this paper is based on the idea of Ethereum to keep the state of the system explicitly in the current block but further pursues this by including the relevant part of the current system state in new transactions as well. This enables other participants to validate incoming transactions without having to download the whole blockchain initially. Following this idea use cases can be supported that require scalable blockchain technology but not necessarily an indefinite and complete transaction history.},
+booktitle = {Proceedings of the 1st International Workshop on Emerging Trends in Software Engineering for Blockchain},
+pages = {48–51},
+numpages = {4},
+keywords = {merkle tree, patricia tree, bitcoin, ethereum, trie, scalability, blockchain},
+location = {Gothenburg, Sweden},
+series = {WETSEB '18}
+}
+
+
+@article{10.1145/3024928,
+author = {Bailis, Peter and Narayanan, Arvind and Miller, Andrew and Han, Song},
+title = {Research for Practice: Cryptocurrencies, Blockchains, and Smart Contracts; Hardware for Deep Learning},
+year = {2017},
+issue_date = {May 2017},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {60},
+number = {5},
+issn = {0001-0782},
+url = {https://doi.org/10.1145/3024928},
+doi = {10.1145/3024928},
+abstract = {Expert-curated guides to the best of CS research.},
+journal = {Commun. ACM},
+month = apr,
+pages = {48–51},
+numpages = {4}
+}
+
+
+@inproceedings{10.1145/3098954.3098983,
+author = {Buccafurri, Francesco and Lax, Gianluca and Nicolazzo, Serena and Nocera, Antonino},
+title = {Overcoming Limits of Blockchain for IoT Applications},
+year = {2017},
+isbn = {9781450352574},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3098954.3098983},
+doi = {10.1145/3098954.3098983},
+abstract = {Blockchain technology allows the implementation of a public ledger securely recording transactions among peers without the need of trusted third parties. For both researchers and industry IoT appears a domain in which there would be extraordinary benefits if the features of Blockchain can be exploited. Indeed, the possibility that IoT devices participate in public shared transactions enables a lot of challenging applications. However, there are some aspects that may limit the use of Blockchain in IoT. These are mainly related to the low computational power and storage capabilities of IoT devices. In this paper, we propose an alternative way to implement a public ledger overcoming the above drawbacks, thus appearing more suitable to IoT applications. The proposed protocol leverages the popular social network Twitter and works by building a meshed chain of tweets to ensure transaction security. Importantly, Twitter does not play neither the role of trusted third party nor the role of ledger provider.},
+booktitle = {Proceedings of the 12th International Conference on Availability, Reliability and Security},
+articleno = {26},
+numpages = {6},
+keywords = {Blockchain, Twitter, Public Ledger, IoT applications},
+location = {Reggio Calabria, Italy},
+series = {ARES '17}
+}
+
+
+@article{10.1145/3359552,
+author = {Catalini, Christian and Gans, Joshua S.},
+title = {Some Simple Economics of the Blockchain},
+year = {2020},
+issue_date = {July 2020},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {63},
+number = {7},
+issn = {0001-0782},
+url = {https://doi.org/10.1145/3359552},
+doi = {10.1145/3359552},
+abstract = {Blockchain technology can shape innovation and competition in digital platforms, but under what conditions?},
+journal = {Commun. ACM},
+month = jun,
+pages = {80–90},
+numpages = {11}
+}
+
+
+@inproceedings{10.1145/2976749.2978309,
+author = {Luu, Loi and Chu, Duc-Hiep and Olickel, Hrishi and Saxena, Prateek and Hobor, Aquinas},
+title = {Making Smart Contracts Smarter},
+year = {2016},
+isbn = {9781450341394},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2976749.2978309},
+doi = {10.1145/2976749.2978309},
+abstract = {Cryptocurrencies record transactions in a decentralized data structure called a blockchain. Two of the most popular cryptocurrencies, Bitcoin and Ethereum, support the feature to encode rules or scripts for processing transactions. This feature has evolved to give practical shape to the ideas of smart contracts, or full-fledged programs that are run on blockchains. Recently, Ethereum's smart contract system has seen steady adoption, supporting tens of thousands of contracts, holding millions dollars worth of virtual coins.In this paper, we investigate the security of running smart contracts based on Ethereum in an open distributed network like those of cryptocurrencies. We introduce several new security problems in which an adversary can manipulate smart contract execution to gain profit. These bugs suggest subtle gaps in the understanding of the distributed semantics of the underlying platform. As a refinement, we propose ways to enhance the operational semantics of Ethereum to make contracts less vulnerable. For developers writing contracts for the existing Ethereum system, we build a symbolic execution tool called Oyente to find potential security bugs. Among 19, 336 existing Ethereum contracts, Oyente flags 8, 833 of them as vulnerable, including the TheDAO bug which led to a 60 million US dollar loss in June 2016. We also discuss the severity of other attacks for several case studies which have source code available and confirm the attacks (which target only our accounts) in the main Ethereum network.},
+booktitle = {Proceedings of the 2016 ACM SIGSAC Conference on Computer and Communications Security},
+pages = {254–269},
+numpages = {16},
+keywords = {smart contract, ethereum, blockchain, symbolic execution, cryptocurrencies},
+location = {Vienna, Austria},
+series = {CCS '16}
+}
+
+
+@inproceedings{10.1145/3132747.3132757,
+author = {Gilad, Yossi and Hemo, Rotem and Micali, Silvio and Vlachos, Georgios and Zeldovich, Nickolai},
+title = {Algorand: Scaling Byzantine Agreements for Cryptocurrencies},
+year = {2017},
+isbn = {9781450350853},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3132747.3132757},
+doi = {10.1145/3132747.3132757},
+abstract = {Algorand is a new cryptocurrency that confirms transactions with latency on the order of a minute while scaling to many users. Algorand ensures that users never have divergent views of confirmed transactions, even if some of the users are malicious and the network is temporarily partitioned. In contrast, existing cryptocurrencies allow for temporary forks and therefore require a long time, on the order of an hour, to confirm transactions with high confidence.Algorand uses a new Byzantine Agreement (BA) protocol to reach consensus among users on the next set of transactions. To scale the consensus to many users, Algorand uses a novel mechanism based on Verifiable Random Functions that allows users to privately check whether they are selected to participate in the BA to agree on the next set of transactions, and to include a proof of their selection in their network messages. In Algorand's BA protocol, users do not keep any private state except for their private keys, which allows Algorand to replace participants immediately after they send a message. This mitigates targeted attacks on chosen participants after their identity is revealed.We implement Algorand and evaluate its performance on 1,000 EC2 virtual machines, simulating up to 500,000 users. Experimental results show that Algorand confirms transactions in under a minute, achieves 125x Bitcoin's throughput, and incurs almost no penalty for scaling to more users.},
+booktitle = {Proceedings of the 26th Symposium on Operating Systems Principles},
+pages = {51–68},
+numpages = {18},
+location = {Shanghai, China},
+series = {SOSP '17}
+}
+
+
+@inproceedings{10.1145/2660267.2660379,
+author = {Biryukov, Alex and Khovratovich, Dmitry and Pustogarov, Ivan},
+title = {Deanonymisation of Clients in Bitcoin P2P Network},
+year = {2014},
+isbn = {9781450329576},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2660267.2660379},
+doi = {10.1145/2660267.2660379},
+abstract = {Bitcoin is a digital currency which relies on a distributed set of miners to mint coins and on a peer-to-peer network to broadcast transactions. The identities of Bitcoin users are hidden behind pseudonyms (public keys) which are recommended to be changed frequently in order to increase transaction unlinkability.We present an efficient method to deanonymize Bitcoin users, which allows to link user pseudonyms to the IP addresses where the transactions are generated. Our techniques work for the most common and the most challenging scenario when users are behind NATs or firewalls of their ISPs. They allow to link transactions of a user behind a NAT and to distinguish connections and transactions of different users behind the same NAT. We also show that a natural countermeasure of using Tor or other anonymity services can be cut-off by abusing anti-DoS countermeasures of the Bitcoin network. Our attacks require only a few machines and have been experimentally verified. The estimated success rate is between 11% and 60% depending on how stealthy an attacker wants to be. We propose several countermeasures to mitigate these new attacks.},
+booktitle = {Proceedings of the 2014 ACM SIGSAC Conference on Computer and Communications Security},
+pages = {15–29},
+numpages = {15},
+keywords = {bitcoin, p2p, tor, anonymity},
+location = {Scottsdale, Arizona, USA},
+series = {CCS '14}
+}
+
+
+@inproceedings{10.1145/3243734.3243780,
+author = {Tsankov, Petar and Dan, Andrei and Drachsler-Cohen, Dana and Gervais, Arthur and B\"{u}nzli, Florian and Vechev, Martin},
+title = {Securify: Practical Security Analysis of Smart Contracts},
+year = {2018},
+isbn = {9781450356930},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3243734.3243780},
+doi = {10.1145/3243734.3243780},
+abstract = {Permissionless blockchains allow the execution of arbitrary programs (called smart contracts), enabling mutually untrusted entities to interact without relying on trusted third parties. Despite their potential, repeated security concerns have shaken the trust in handling billions of USD by smart contracts. To address this problem, we present Securify, a security analyzer for Ethereum smart contracts that is scalable, fully automated, and able to prove contract behaviors as safe/unsafe with respect to a given property. Securify's analysis consists of two steps. First, it symbolically analyzes the contract's dependency graph to extract precise semantic information from the code. Then, it checks compliance and violation patterns that capture sufficient conditions for proving if a property holds or not. To enable extensibility, all patterns are specified in a designated domain-specific language. Securify is publicly released, it has analyzed &gt;18K contracts submitted by its users, and is regularly used to conduct security audits by experts. We present an extensive evaluation of Securify over real-world Ethereum smart contracts and demonstrate that it can effectively prove the correctness of smart contracts and discover critical violations.},
+booktitle = {Proceedings of the 2018 ACM SIGSAC Conference on Computer and Communications Security},
+pages = {67–82},
+numpages = {16},
+keywords = {security analysis, verification, smart contracts, stratified datalog},
+location = {Toronto, Canada},
+series = {CCS '18}
+}
